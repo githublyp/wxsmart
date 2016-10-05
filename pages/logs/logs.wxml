@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<include src="../common/header" />
+<view class="container log-list">
+  <text>目前数据状态：{{clear}}</text>
+  <button bindtap="clearStore" size="mini" data-clear='{{clear}}'>点击清空数据</button>
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>
+<include src="../common/footer" />

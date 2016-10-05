@@ -1,0 +1,7 @@
+<view>
+    <loading hidden="{{!loadingShow?true:false}}">{{loadingTitle||''}}</loading>
+    <toast hidden="{{!toastShow?true:false}}" duration="{{toastDuration||1500}}">{{toastTitle||''}}</toast>  
+    <modal title="{{confirmTitle||''}}" confirm-text="{{confirmOK||'确定'}}" cancel-text="{{confirmNO||'取消'}}" hidden="{{!confirmShow?true:false}}" bindconfirm="confirmReceive" bindcancel="confirmCancel">
+        {{confirmMsg}}
+    </modal>  
+</view>

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<include src="../common/header" />
+<view class="container">
+  <view class="panel">
+    <view class="col-33">
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="">名称</text>
+    </view>
+    <view class="col-33">
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="">名称</text>
+    </view>
+    <view class="col-33">
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="">名称</text>
+    </view>
+  </view>
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName||'昵称'}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">数据：{{motto}}</text>
+  </view>  
+  
+</view>
+<include src="../common/footer" />
