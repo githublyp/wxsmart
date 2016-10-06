@@ -34,20 +34,13 @@ App({
   },
   globalData:{
     userInfo:null
-  },
-  /*
-  @method + 基础对象，用于扩展
-  @return object 基本对象
-  */
-  getBaseCtr:function(){
-    return utils.getBaseCtr();
-  },
+  },  
   /*
   @method + 创建页面主要子页面调用共享基本方法属性
   @param object 新对象
   */
   createPage:function(obj){
-    return utils.extend(obj,this.getBaseCtr());    
+    return utils.extend(obj,utils.getBaseCtr());    
   },    
   /*
   @method + 日志记录
