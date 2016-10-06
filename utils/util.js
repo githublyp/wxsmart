@@ -1,6 +1,7 @@
 /*
 工具公用对象
 */
+var routes=require('./route.js');
 var util={
   /*
   @method 基础页面
@@ -10,7 +11,9 @@ var util={
   getBaseCtr:function(){
     var self=this;
     return {
-      data: {},
+      data: {
+        routes:routes.mapUrl()
+      },
       pageName:"BASECTR",
       onLoad: function(options) {
         // Do some initialize when page load.        
@@ -138,5 +141,6 @@ module.exports = {
   getBaseCtr:util.getBaseCtr,
   log:util.log,
   extend:util.extend,
-  formatTime: util.formatTime,  
+  formatTime: util.formatTime,
+  routes:routes,  
 }

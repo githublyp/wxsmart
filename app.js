@@ -1,6 +1,5 @@
 //app.js
 var utils=require('./utils/util.js');
-var routes=require('./utils/route.js');
 
 App({
   onLaunch: function () {    
@@ -64,6 +63,6 @@ App({
   @return 页面路径
   */
   getUrl:function(name){
-    return routes.getUrl(name);
+    return utils.routes.getUrl(name);
   }  
 })

@@ -94,7 +94,7 @@
     </view>
   </picker>
   <view class="m5">
-    <navigator url="../map/map">进入地图</navigator>
+    <navigator url="{{routes.map}}">进入地图</navigator>
   </view>
   <view  bindtap="bindViewTap" class="userinfo m5">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
