@@ -13,14 +13,38 @@ Page(app.createPage({
     confirmMsg:'你确定退出？',
     index:0,
     array:['你','我','她'],
+    open:false,
+    actionSheetItems: ['item1', 'item2', 'item3', 'item4'],
+    actionSheetHidden:true,
   },
   pageName:"home", 
   pageLog:true, 
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: app.getUrl('logs')
+    });
+  },  
+  actionSheetTap: function(e) {
+    this.setData({
+      actionSheetHidden: !this.data.actionSheetHidden
     })
+  },
+  bindItemTap:function(e){
+    app.log('点击：' + e.currentTarget.dataset.name);
+    this.setData({
+      actionSheetHidden: !this.data.actionSheetHidden
+    });   
+  },
+  actionSheetChange: function(e) {
+    this.setData({
+      actionSheetHidden: !this.data.actionSheetHidden
+    });
+  },
+  switch1Change:function(e){
+    this.setData({
+      open:e.detail.value
+    });
   },
   bindPickerChange:function(e){
     this.setData({

@@ -90,16 +90,31 @@
   </view>
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker m5">
-      当前选择：{{array[index]}}<icon type="success" size="15"/>
+      当前选择：{{array[index]}}<icon type="success" size="15"/>      
     </view>
   </picker>
+  <view class="m5">
+    <navigator url="../map/map">进入地图</navigator>
+  </view>
   <view  bindtap="bindViewTap" class="userinfo m5">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName||'昵称'}}</text>
   </view>
+  
+  <progress percent="80" active="true" show-info="true" stroke-width="2" />
+  <slider show-value="true" min="0" max="100" step="1"/>
+  <switch bindchange="switch1Change"/>{{open?true:false}}
+  <button type="default" class="m5" bindtap="actionSheetTap">弹出action sheet</button>
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for="{{actionSheetItems}}">
+      <action-sheet-item class="item" bindtap="bindItemTap" data-name="{{item}}">{{item}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+  </action-sheet>
+
   <view class="m5">
     <text class="user-motto">数据：{{motto}}</text>
-  </view>  
-  
+  </view>    
+
 </view>
 <include src="../common/footer" />

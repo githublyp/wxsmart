@@ -1,0 +1,7 @@
+<!--temp.wxml-->
+<include src="../common/header" />
+<view class="container">
+      
+
+</view>
+<include src="../common/footer" />

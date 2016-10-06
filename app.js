@@ -1,12 +1,13 @@
 //app.js
 var utils=require('./utils/util.js');
+var routes=require('./utils/route.js');
 
 App({
   onLaunch: function () {    
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || [];
     logs.unshift(Date.now());
-    wx.setStorageSync('logs', logs);
+    wx.setStorageSync('logs', logs);    
   },  
   onShow: function () {
     this.log('App Show');
@@ -56,5 +57,13 @@ App({
   */
   log(obj){
     utils.log(obj);
+  },
+  /*
+  @method 获取页面路径
+  @param 页面名称
+  @return 页面路径
+  */
+  getUrl:function(name){
+    return routes.getUrl(name);
   }  
 })
