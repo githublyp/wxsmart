@@ -1,4 +1,55 @@
 /**app.wxss**/
 .container {
   height: auto;      
+}
+.left_right_m2{
+  margin: 0px 2px;
 } 
+.left_right_m5{
+  margin: 0px 5px;
+}
+.mb5{
+  margin-bottom: 5px;
+}
+.m5{
+  margin: 5px;
+}
+.mr1{
+  margin-right: 1px;
+}
+.mtop_1{
+  margin-top: 1px;
+}
+.nomtop{
+  margin-top: 0px;
+}
+.nombottom{
+  margin-bottom: 0px;
+}
+.backedf{
+  background-color: #edf;
+}
+.back666{
+  background-color: #666;
+}
+.space2{
+  padding-bottom:2px;  
+}
+.bdrds_tl_5{
+  border-top-left-radius: 5px;
+}
+.bdrds_br_5{
+  border-bottom-right-radius: 5px;
+}
+.bdrds_bl_5{
+  border-bottom-left-radius: 5px;
+}
+.bdrds_tr_5{
+  border-top-right-radius: 5px;
+}
+.ptop2{  
+  padding-top: 2px;
+}
+.ptop_1{
+  padding-top: 1px;
+}

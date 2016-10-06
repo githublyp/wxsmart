@@ -38,13 +38,3 @@
 .userinfo-nickname {
   color: #000;
 }
-
-.usermotto {
-  margin-top: 200px;
-}
-.body{
-    padding-left: 30rpx;
-    padding-right: 30rpx;
-    overflow: hidden;
-    height:30px;
-}

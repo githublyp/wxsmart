@@ -89,15 +89,15 @@
     </view>
   </view>
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <view class="picker">
+    <view class="picker m5">
       当前选择：{{array[index]}}<icon type="success" size="15"/>
     </view>
   </picker>
-  <view  bindtap="bindViewTap" class="userinfo">
+  <view  bindtap="bindViewTap" class="userinfo m5">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName||'昵称'}}</text>
   </view>
-  <view class="usermotto">
+  <view class="m5">
     <text class="user-motto">数据：{{motto}}</text>
   </view>  
   
