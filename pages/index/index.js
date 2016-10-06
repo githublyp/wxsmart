@@ -11,6 +11,8 @@ Page(app.createPage({
     toastTitle:'欢迎回来',
     confirmShow:true,
     confirmMsg:'你确定退出？',
+    index:0,
+    array:['你','我','她'],
   },
   pageName:"home", 
   pageLog:true, 
@@ -19,6 +21,11 @@ Page(app.createPage({
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  bindPickerChange:function(e){
+    this.setData({
+      index: e.detail.value
+    });
   },  
   confirmCancel:function(e){
     app.log(123);

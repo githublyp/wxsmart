@@ -1,20 +1,98 @@
 <!--index.wxml-->
 <include src="../common/header" />
 <view class="container">
-  <view class="panel">
-    <view class="col-33">
-      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+  <view class="panel m5">
+    <view class="col-33 backedf bdrds_tl_5">
+      <text class="">名称</text>
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>      
+    </view>
+    <view class="col-33 left_right_m2 backedf">
+      <text class="">名称</text>
+      <text class="back666 space2"></text>
       <text class="">名称</text>
     </view>
-    <view class="col-33">
-      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+    <view class="col-33 backedf bdrds_tr_5">
       <text class="">名称</text>
-    </view>
-    <view class="col-33">
-      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="back666 space2"></text>
       <text class="">名称</text>
     </view>
   </view>
+  <view class="panel m5">
+    <view class="col-33 backedf">
+      <text class="">名称</text>
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>      
+    </view>
+    <view class="col-33 left_right_m2 backedf">
+      <text class="">名称</text>
+      <text class="back666 space2"></text>
+      <text class="">名称</text>
+    </view>
+    <view class="col-33 backedf">
+      <text class="">名称</text>
+      <text class="back666 space2"></text>
+      <text class="">名称</text>
+    </view>
+  </view>
+  <view class="panel m5">
+    <view class="col-33 backedf bdrds_bl_5">
+      <text class="">名称</text>
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>      
+    </view>
+    <view class="col-33 left_right_m2 backedf">
+      <text class="">名称</text>
+      <text class="back666 space2"></text>
+      <text class="">名称</text>
+    </view>
+    <view class="col-33 backedf bdrds_br_5">
+      <text class="">名称</text>
+      <text class="back666 space2"></text>
+      <text class="">名称</text>
+    </view>
+  </view>
+  <view class="panel left_right_m5">
+    <view class="col-33 backedf mr1">      
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>      
+      <text class="">名称</text>      
+    </view>
+    <view class="col-33 backedf mr1">      
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="">名称</text>      
+    </view>
+    <view class="col-33 backedf mr1">      
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="">名称</text>      
+    </view>
+    <view class="col-33 backedf">      
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="">名称</text>      
+    </view>
+  </view>
+  <view class="panel left_right_m5">
+    <text class="back666 ptop_1"></text>
+  </view>
+  <view class="panel left_right_m5">
+    <view class="col-33 backedf mr1">      
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>      
+      <text class="">名称</text>      
+    </view>
+    <view class="col-33 backedf mr1">      
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="">名称</text>      
+    </view>
+    <view class="col-33 backedf mr1">      
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="">名称</text>      
+    </view>
+    <view class="col-33 backedf">      
+      <image class="" src="{{userInfo.avatarUrl}}" background-size="" mode="aspectFit"></image>
+      <text class="">名称</text>      
+    </view>
+  </view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}<icon type="success" size="15"/>
+    </view>
+  </picker>
   <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName||'昵称'}}</text>
